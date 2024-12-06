@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Carregar Posts</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            background-color: #58585f;
+            color:#333;
+            margin: 0;
+            padding: 20 px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 36;
+            color:#555;
+            background-color: #0056b3;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        button{
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        #listaPosts {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="projeto.js" defer></script>
+</head>
+<body>
+    <h1>Lista de Posts</h1>
+     <!-- Vai carregar aqui -->
+    
+    <!-- Botão para carregar os posts -->
+    <button id="carregarPosts">Carregar Posts</button>
+    
+    <!-- Lista para exibir os posts -->
+    <ul id="listaPosts"></ul>
+</body>
+</html>

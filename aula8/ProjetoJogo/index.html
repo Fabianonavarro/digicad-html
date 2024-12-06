@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+
+    <div id="game-container">
+        img src="./ia.png" alt="robô mergulhador" class="container__imagem-robo" />
+        <h1>Jogo de Adivinhar</h1>
+        <p>Tente adivinhar o número entre 1 a 100</p>
+        <form id="guess-form">
+            <!-- Alterei o ID do campo de input -->
+            <input type="number" id="guess-input" placeholder="Digite um número" min="1" max="100" required>
+            <button type="submit">Chutar</button>
+        </form>
+        <p id="message"></p>
+        <p id="lives">Vidas restantes: <span id="lives-count">7</span></p>   
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

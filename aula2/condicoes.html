@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <script>
+
+        let a = Number(prompt('Digite a Primeira Nota'));
+        let b = Number(prompt('Digite a Segunda Nota'));
+        let c = Number(prompt('Digite a Terceira Nota'));
+
+        let media = (a + b + c) /3
+
+        if(media >= 7){
+            alert(`Parabéns!!! Sua media foi ${media} e você esta aprovado`)
+
+        }else if (media < 7 && media > 5){
+            alert(`Sua media foi ${media} e você esta em recuperação`)
+        } else{
+            alert(`Reprovado!! Sua média foi ${media}`)
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

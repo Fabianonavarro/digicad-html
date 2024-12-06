@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            background-color: #58585f;
+            color:#333;
+            margin: 0;
+            padding: 20 px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 36;
+            color: #33c137;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        button{
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+            padding: 10px;
+            background-color: #33c137;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
+
+        #usuarios-lista {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 600px;
+            margin: 20px auto;
+            background-color: aqua;
+            color: #333;
+        }
+
+
+#usuarios-lista li {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Usuário</h1>
+    <button id="buscar">Buscar Usuários</button>
+    <h2>Usúarios:</h2>
+    <ul id="usuarios-lista"></ul>
+    <script src="./scritp.js"></script>
+</body>
+</html>

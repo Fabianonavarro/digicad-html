@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByClassName</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s; 
+            background-color: #555;
+        }
+        .destacado {
+            background-color: yellow; /* Exemplo de estilo para destacar */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <ul>
+        <li class="item"> Estudar JavaScript</li>
+        <li class="item"> Fazer Exercicios</li>
+        <li class="item"> Ler Documentação</li>
+        <li class="item"> Praticar Programação</li>
+    </ul>
+    <button id="destacar">Destacar Itens</button>
+    <button id="resetar">Resetar Estilo</button>
+
+    <script>
+
+        // Selecionar os Botões
+        const botaoDestacar = document.getElementById("destacar");
+        const botaoResetar = document.getElementById("resetar");
+
+        // Função para destacar os itens da lista
+        botaoDestacar.addEventListener("click", () => {
+            // Selecionar todos os elementos com a classe "item"
+            const itens = document.getElementsByClassName("item");
+
+            // Convert HTMLCollection para array e aplicar as mudanças
+            Array.from(itens).forEach(item => {
+                item.classList.add("destacado");
+            });
+        });
+
+        // Função para resetar o estilo
+        botaoResetar.addEventListener("click", () => {
+            const itens = document.getElementsByClassName("item");
+            Array.from(itens).forEach(item => {
+                item.classList.remove("destacado");
+            });
+        });
+
+    </script>
+
+</body>
+</html>

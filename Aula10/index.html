@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM interativo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <style>
+       <style>
+        .card{
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+
+     </style>
+    </style>
+
+</head>
+<body>
+    <h1 id="titulo">Exemplo com Jquery</h1>
+    <p id="resultado">Texto Inicial</p>
+    <button id="meuBotao">Clique aqui</button>
+
+    <h2>Lista de Usuario</h2>
+    <button id="carregarDados">Carregar Usuários</button>
+
+    <ul id="listaUsuarios">
+        <!--A lista sera carregada aqui-->
+    </ul>
+    <script src="./main2.js"></script>
+    
+</body>
+</html>

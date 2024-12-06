@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <script>
+        let comeco = parseInt(prompt('Digite um começo'))
+        let fim = parseInt(prompt('Digite o Final'))
+        let soma = 0
+        
+        for(let i = comeco; i<=fim;i++){
+            let soma = 0;
+            for (let i = comeco; i<= fim; i++){
+                if (i % 2 !=0 ){
+                    soma +=i;
+            }
+            alert(`A soma dos números impares de ${comeco} até ${fim} é ${soma}`);
+        }
+    }
+        alert(soma_nuns(2,11));
+
+    </script>
+</body>
+</html>

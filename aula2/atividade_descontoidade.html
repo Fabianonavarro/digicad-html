@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto por idade </title>
+</head>
+<body>
+
+    <script>
+        let idade = Number(prompt('Digite sua Idade para ver se tem direito a Desconto'));
+        
+        // condições para o desconto
+
+        if (idade >= 60){
+            alert('Idoso tem direto a 30% de Desconto');
+        } else if (idade>=12 && idade <= 59){
+            alert('Cliente sem  direito a Desconto');
+        }else {
+            alert('Criança tem direto a 50% de Desconto');
+        }        
+
+    </script>
+    
+        
+</body>
+</html>

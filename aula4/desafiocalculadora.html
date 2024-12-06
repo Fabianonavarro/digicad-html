@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        function calculadora(){
+        let result = 0;
+        const num1 = Number(prompt('Informe o 1º numero'))
+        const num2 = Number(prompt('Informe o 2º número'))
+        const operacao = prompt('Informe qual operação deseja executar, dentre as seguintes: \n ) Para soma: + ; \n ) Para subtração: - ; \n  ) Para multiplicação: * ; \n ) Para divisão: / .')
+
+        if(operacao == '+'){
+            result = num1 + num2
+        }else if(operacao == '-'){
+            result = num1 - num2
+        }else if(operacao == '*'){
+            result = num1 * num2
+        }else if(operacao == '/'){
+            result = num1 / num2
+        }else{
+            return `Informe um dado válido!`
+        }
+
+        return `Seu resultado foi ${num1} ${operacao} ${num2} = ${result}`
+      }
+
+      alert(calculadora())
+    </script>
+    
+</body>
+</html>

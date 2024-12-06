@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+        /*
+        Switch case
+        let nome = prompt('Digite um nome : ');
+        switch(nome) {
+
+            case "Scooby":
+            alert('é rico');
+            break;
+
+            case "Brow":
+            alert('é parado');
+            break;
+
+            default:
+                alert('Não encontrado');
+            }
+       
+        let frutas = ["Banana", "Manga", "Maça", "Kiwi", "Uva", "Abacate", "Morango", "Ameixa"];
+        //push = add no final
+        frutas.push("Jaca");
+
+        //pop = exclui o último
+        frutas.pop()
+        // shift = exclui o primeiro
+        frutas.shift();
+
+        // unshift = add no começo
+        frutas.unshift("Banana");
+        alert (frutas)
+        alert("array após manipulacao: " + frutas); // exibe um array após as manipulações
+        alert("Tamanho do array: " + frutas.length) // tamanho do array
+        alert("Primeiro Elemento: " + frutas[0]); // primeiro elementos
+        alert("Último Elemento: " + frutas[frutas.length-1]); // Mostra o útimo  elementos
+        
+        // passando por cada elemento com alert
+
+        for(let i= 0; i < frutas.length; i++) {
+            alert("Frutas " + (i + 1) + " : " + frutas[i]);
+
+        }
+        */
+       // matrizes
+
+       let matriz = [
+
+       ["Scooby", 22, "SP"],
+       ["Brow", 18, "SP"],
+       ["Maria", 19, "Rj"],
+       ["João", 42, "BH"]
+       ]
+        console.log(matriz.length) //3
+        console.log(matriz[0]) // traz linha  ["Scooby", 22, "SP"],
+        console.log(matriz[0][0]) // traz somente o nome da linha ["Scooby",],
+     
+     for (let i =0; i < matriz.length; i++){ // loope externo percorrer as linhas
+        for (let j = 0; j < matriz[i].length; j++) { // loop interno percorre os elementos da linha
+            console.log(matriz[i][j]);
+        }
+
+
+     }
+</script>
+    
+</body>
+</html>

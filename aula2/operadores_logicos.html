@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ptb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+</head>
+<body>
+    <script>
+        let a = 5
+        let b = '5'
+        let c = 2
+        let d = 3
+
+        //e
+
+        console.log(a > c && d > c && a < d) // false
+        
+        // todas as condições forem verdadeiras
+        //a > c: 5 >2 = true
+        // d >c: 3 > 2= true
+        // a < d 5 <3 = false
+
+        //ou
+
+        console.log(a < c || d >c || a <d ) // true
+
+        // a < c: 5 < 2 false
+        // d > c: 3 > 2 true
+        // a < d: 5 < 3 false
+
+        // resultado final sera verdadeiro, pelo menos uma opcao verdaira
+
+        // não !
+        let chovendo = true
+        console.log(!chovendo)// False
+
+
+    </script>
+    
+</body>
+</html>

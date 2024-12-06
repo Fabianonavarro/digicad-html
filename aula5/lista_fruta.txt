@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Frutas </title>
+</head>
+<body>
+    <script>
+        //  Lista frutas com preços
+        let frutas = [
+            { nome: "Banana", preco: 15, unidade: "duz" }, 
+            { nome: "Maçã", preco: 7, unidade: "pct" },   
+            { nome: "Kiwi", preco: 30, unidade: "caixa" },    
+            { nome: "Manga", preco: 10, unidade: "kg" },   
+            { nome: "Uva", preco: 25, unidade: "caixa" },     
+            { nome: "Abacate", preco: 7, unidade: "unidade" },  
+            { nome: "Morango", preco: 20, unidade: "caixa" }, 
+            { nome: "Ameixa", preco: 18, unidade: "kg" }   
+        ];
+
+       
+        let Codigo_fruta = prompt('Digite o código da fruta :');
+
+        
+        if (Codigo_fruta !== null && !isNaN(Codigo_fruta)) {
+           
+            Codigo_fruta = Number(Codigo_fruta);
+
+            
+            if (Codigo_fruta >= 0 && Codigo_fruta < frutas.length) {
+            
+                let frutaSelecionada = frutas[Codigo_fruta];
+                alert(`Fruta: ${frutaSelecionada.nome} | Preço: R$ ${frutaSelecionada.preco} por ${frutaSelecionada.unidade}`);
+            } else {
+                alert('Código não encontrado! Digite um codigo valido:');
+            }
+        } else {
+            alert('Por favor, insira um codigo válido.');
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão AWS</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s; 
+            background-color: #555;
+         }
+        .feedback {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+            background-color:  #555;
+            color:white
+        }
+        .correct {
+            background-color: white;
+            color: blue;
+        }
+        .incorrect {
+            background-color: white;
+            color: red;
+        }
+        
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questão de AWS</h1>
+    <p id="pergunta">Você está configurando uma rede de distribuição de conteúdo para uma aplicação web. Qual serviço da AWS deve ser usado para distribuir o conteúdo globalmente com baixa latência?</p>
+
+    <label for="resposta">Escolha a alternativa:</label>
+    <input type="text" id="resposta" placeholder="Digite a alternativa (a, b, c, d)">
+    <button onclick="verificarResposta()">Enviar</button>
+
+    <div id="feedback" class="feedback"></div>
+
+    <script>
+        function verificarResposta() {
+            const respostaUsuario = document.getElementById('resposta').value.trim().toLowerCase();
+            
+            // Resposta correta
+            const respostaCorreta = 'a';
+            const feedbackDiv = document.getElementById('feedback');
+            
+            // Verifica se a resposta está correta
+            if (respostaUsuario === respostaCorreta) {
+                feedbackDiv.textContent = 'Correto! Para distribuir conteúdo de forma rápida e segura para os usuários em todo o mundo.';
+                feedbackDiv.className = 'feedback correct';
+            } 
+        
+            // Verifica se a resposta está entre as opções válidas (a, b, c, d)
+            else if (respostaUsuario === 'a' || respostaUsuario === 'b' || respostaUsuario === 'c' || respostaUsuario === 'd') {
+                feedbackDiv.textContent = 'Errado, tente novamente.';
+                feedbackDiv.className = 'feedback incorrect';
+            } 
+            // Caso a resposta seja inválida
+            else {
+                feedbackDiv.textContent = 'Valor inválido, por favor, insira uma das alternativas: a, b, c, d.';
+                feedbackDiv.className = 'feedback invalid';
+            }
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s; 
+            background-color: #555;
+        }
+        #mensagem {
+            font-size: 20px;
+            color: blue;
+            margin-top: auto;
+            
+        }
+        button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>GetElementById</h1>
+    <p id="mensagem">Esta mensagem será alterada</p>
+    <button onclick="ChangeMessage()">Clique Aqui</button>
+
+    <script>
+        
+        function ChangeMessage() {
+            // Acessa o elemento pelo id
+            const messageElement = document.getElementById('mensagem');
+
+            // Altera o conteúdo do elemento
+            messageElement.textContent = 'A Mensagem foi alterada com Sucesso!';
+
+            // Adiciona um estilo adicional
+            messageElement.style.color = 'green';
+            messageElement.style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+</html>
