@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+
+    <script>
+      alert('Boas vindas ao jogo do número secreto');
+        let numeroSecreto = 5;
+        console.log(numeroSecreto);
+        let chute;
+        let tentativas = 1;
+        let maxTentativas = 7;
+
+        while (chute != numeroSecreto && tentativas <= maxTentativas) {
+            chute = prompt('Escolha um número entre 1 e 100');
+            
+            if (chute == numeroSecreto) {
+                alert(`Isso aí! Você descobriu o número secreto: ${numeroSecreto} com: ${tentativas} tentativas`);
+                break; // finaliza o jogo se acertar
+
+            } else {
+                if (chute > numeroSecreto) {
+                    alert(`O número secreto é menor que ${chute}`);
+                } else { 
+                    alert(`O número secreto é maior que ${chute}`);
+                }
+            }
+            tentativas++;
+        }
+
+        // Caso o número de tentativas seja excedido
+        if (tentativas > maxTentativas && chute != numeroSecreto) {
+            alert(`Você não conseguiu adivinhar o número secreto em ${maxTentativas} tentativas. O número secreto era ${numeroSecreto}.`);
+        }
+
+    </script>
+    
+</body>
+</html>

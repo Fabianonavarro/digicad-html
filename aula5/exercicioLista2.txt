@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista2 Tarefas </title>
+</head>
+<body>
+    <Script>
+        let tarefas = [
+        { tarefa: "Levar Scooby Banho tosa", data: "2024-11-18" },
+        { tarefa: "Reunião com equipe", data: "2024-11-22" },
+        { tarefa: "Estudar Certificação", data: "2024-11-24" },
+        { tarefa: "Aula CS", data: "2024-11-23" }
+        ];
+// Loop para percorrer as tarefas de trás para frente (invertendo a ordem) e depois loop externo começa pela última tarefa
+    for (let i = tarefas.length - 1; i >= 0; i--) { 
+    console.log(`${tarefas[i].tarefa} - Data: ${tarefas[i].data}`);
+    }
+    </Script>
+</body>
+</html>

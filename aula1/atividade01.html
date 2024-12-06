@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ptb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        //cumprimemtando o usuário
+
+        alert('Olá! Eu sou a escola Navinfo, sou assistente virtual.vamos nos conhecer melhor!😊 ')
+        //coletando as informações Pessoais
+        let nome = prompt('Qual e seu nome?');
+        let idade = parseInt(prompt('Qual e sua idade?'));
+        let cidade = prompt('Em qual cidde você mora?');
+
+        //resposta personalizada
+        
+        alert(`Muito prazer, ${nome}! Vejo que vc tem ${idade} anos e mora em ${cidade}. Vamos realizar alguns calculos 😉`  )
+        // solicitando números para calculos
+
+        let numero1 = parseFloat(prompt('Digite um número'));
+        let numero2 = parseFloat(prompt('Digite outro número'));
+
+        //realiazando os calculos
+
+        let soma = numero1 + numero2;
+        let subtração = numero1 - numero2;
+        let multiplicação = numero1 * numero2;
+        let divisão = numero1 / numero2;
+        let modulo = numero1 % numero2;
+       
+
+        alert(`
+        aqui estão os resultados dos cálculos com os numeros que vc me forneceu;
+        
+        -soma: ${soma}
+        -subtracao: ${subtração}
+        -multiplicacao: ${multiplicação}
+        -divisao: ${divisão.toFixed(2)} 
+        -modulo: ${modulo}
+        
+        `);
+        
+        //mensagem de despedida
+        
+        alert (`Obrigado por usar o assistente virtual, ${nome}, volte sempre qualquer coisa e  so me chamar. 😊`);
+
+
+
+
+    </script>
+    
+</body>
+</html>

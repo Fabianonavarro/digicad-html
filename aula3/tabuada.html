@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+
+    <script>
+        
+        // Solicita ao usuário o número para a tabuada
+        let num = parseInt(prompt('Digite um número'));
+        
+        let cont = '';
+        let i = 1; 
+   
+        while (i <= 10) {
+            let result = num * i;
+            cont += `${num} x ${i} = ${result}\n`; 
+            i++; 
+        }
+
+        alert(cont);
+    </script>
+
+    
+</body>
+</html>

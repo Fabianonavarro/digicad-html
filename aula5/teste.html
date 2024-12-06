@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+</head>
+<body>
+    <script>
+        // Lista de votos
+        let votos = [
+            "Scooby Silva", "Scooby Silva", "Lamica Costa", "Lamica Costa", "Brow Moras", 
+            "Lamica Costa", "Ricardo Lima", "João dos Santos", "Carlos Silva", "Lamica Costa", 
+            "Carlos Silva", "João dos Santos", "Fernanda Oliveira", "Scooby Silva", "Brow Moras"
+        ];
+
+        // Objeto para armazenar a contagem dos votos
+        let contagemVotos = {};
+        let totalVotos = 0;
+
+        // Loop único para contar os votos
+        for (let i = 0; i < votos.length; i++) {
+            let candidato = votos[i];
+            contagemVotos[candidato] = (contagemVotos[candidato] || 0) + 1;
+            totalVotos++; // Incrementa o total de votos
+        }
+
+        // Exibindo o total de votos
+        console.log(`Total de votos: ${totalVotos}`);
+
+        // Ordenar os candidatos do maior para o menor número de votos
+        let candidatosOrdenados = Object.entries(contagemVotos)
+            .sort((a, b) => b[1] - a[1]);
+
+        // Exibindo os votos de cada candidato no formato desejado
+        for (let i = 0; i < candidatosOrdenados.length; i++) {
+            let [candidato, votos] = candidatosOrdenados[i];
+            console.log(`Candidato: ${candidato}, teve um total de: ${votos} voto(s).`);
+        }
+    </script>
+</body>
+</html>

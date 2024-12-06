@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivação Diária</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+             font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s; 
+            background-color: #555;
+        }
+
+        .card{
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+    
+        h1{
+            background-color: #0056b3;
+            text-align: center;
+            color: #555;
+        }
+
+     </style>
+</head>
+<body>
+
+    <h1 id="titulo">Motivação Diária</h1>
+    
+    
+    <div id="dica" class="card">
+        Sua dica motivacional aparecerá aqui.
+    </div>
+
+    <button id="meuBotao">Obter Dica</button>
+
+    <script src="dicamotivacao.js"></script>
+</body>
+</html>

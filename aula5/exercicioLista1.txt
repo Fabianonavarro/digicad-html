@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista1_Aumento Salaria</title>
+</head>
+<body>
+    <Script>
+        let funcionarios = [
+            ["Scoooby Silva", "Vice Presidente", 17800],
+            ["Brow Moraes", "Analista de Marketing", 4500],
+            ["João dos Santos", "Desenvolvedor de Software", 6200],
+            ["Mariana Santa", "Coordenadora de Recursos Humanos", 5800],
+            ["Lucas Parreira", "Assistente Administrativo", 3200],
+            ["Lamica Souza", "Designer Gráfico", 4200],
+            ["Ricardo Lima", "Diretor de TI", 10500],
+            ["Patrícia Silva", "Auxiliar de Logística", 2800],
+            ["Onabifa Rocha", "Analista Financeiro", 5200],
+            ["Beatriz Martins", "Secretária Executiva", 3200]
+];
+
+        for (let i = 0; i < funcionarios.length; i++) {
+            let nome = funcionarios[i][0];
+            let cargo = funcionarios[i][1];
+            let salario = funcionarios[i][2];
+            let aumento = salario * 0.10;  // Calcula o aumento de 10%
+            let novoSalario = salario + aumento;  // Aplica o aumento ao salário
+
+            console.log(`${nome} (${cargo}) terá um aumento de R$ ${aumento.toFixed(2)} e seu novo salário será R$ ${novoSalario.toFixed(2)}.`);
+}
+
+    </Script>
+</body>
+</html>
